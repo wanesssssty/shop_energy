@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy shop "Monster"</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <img src="./img/logotype-monster.png" class="logotype-shop">
+        <div class="main-page-text-container2-test">
+            <a href="./index.html" class="tabs">ГОЛОВНА</a>
+            <a href="./shop.html  " class="tabs">МАГАЗИН</a>
+            <a href="./about.html" class="tabs">ПРО НАС</a>
+            <a href="./news.html" class="tabs">НОВИНИ</a>
+        </div>
+        <div class="register">
+            <a href="./contacts2.html" class="register-tab">Вхід</a>
+            <a href="./contacts.html" class="register-tab">Реєстрація</a>
+        </div>
+    </header>
+
+    <a href="./index.html" class="floating-btn"><</a>
+
+            <section class="contacts-page" id="contacts" id="section">
+                <h1 class="page-title">ВХІД</h1>
+
+                <!-- <div class="container">
+        
+            <p>Дякуємо, що вибрали наш сервіс. Зв'яжіться з нами за допомогою форми нижче:</p>
+        
+            <form class="form-container" action="/submit_form" method="post">
+                <label for="fname">Ім'я:</label>
+                <input type="text" id="fname" name="fname" required>
+        
+                <label for="lname">Прізвище:</label>
+                <input type="text" id="lname" name="lname" required>
+        
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <input class="submit-btn" type="submit" value="Відправити">
+            </form>
+        
+        </div> -->
+
+                <form class="form-container-2">
+
+                    <h3 class="form-title">Дякуємо, що вибрали наш сервіс.</h3>
+                    <p class="form-descr">Введіть дані свого аккаунту:</p>
+
+                    <div class="form-field">
+            
+                <label
+                    for="user-email"
+                    class="form-field-label">
+                    Email:
+                </label>
+                <input 
+                    type="email" 
+                    class="form-field-input" 
+                    name="Email" 
+                    id="user-email" 
+                    spellcheck=false
+                    required placeholder="Email..."
+                    autocomplete="off">
+            
+            </div>
+
+            <div class="form-field">
+            
+                <label 
+                    for="user-pass" 
+                    class="form-field-label">
+                    Пароль:
+                </label>
+                <input 
+                    class="form-field-input"
+                    id="pass"
+                    type="password"
+                    name="pass"
+                    autocomplete="off"
+                    required placeholder="Пароль...">
+                    <a href="" class="forgot-pass">Забули пароль?</a>
+            </div>
+
+                    <button class="form-button">
+                        Ввійти
+                    </button>
+
+                </form>
+
+                <button class="scrollToTopBtn" id="scroll-to-top-btn">
+                    ︽
+                </button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close_adv_btn" id="closeAdvBtn">&times;</span>
+                        <p id="advertismentTimer"></p>
+                    </div>
+                </div>
+
+            </section>
+            <footer>
+                <p>© 2023 Monster Shop.</p>
+                <p>Електронна пошта: <a href="mailto:retromusicshop@gmail.com">monstershop@gmail.com</a></p>
+                <p>Номер телефону: <a href="tel:+380976689074">+380993234820</a></p>
+                <p>Адреса: <a href="https://maps.app.goo.gl/MatuB7V1T2muZNeFA" target="_blank"> м. Чернівці, вул.
+                        Небесної Сотні
+                        4a</a></p>
+            </footer>
+            <!-- <script src="./ad.js"></script> -->
+            <script src="./main.js"></script>
+</body>
+
+</html>

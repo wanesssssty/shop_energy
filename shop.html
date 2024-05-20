@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy shop "Monster"</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+    
+        <img src="./img/logotype-monster.png" class="logotype-shop">
+        <div class="main-page-text-container2-test">
+            <a href="./index.html" class="tabs">ГОЛОВНА</a>
+            <a href="./shop.html  " class="tabs">МАГАЗИН</a>
+            <a href="./about.html" class="tabs">ПРО НАС</a>
+            <a href="./news.html" class="tabs">НОВИНИ</a>
+        </div>
+        <div class="register">
+            <a href="./contacts2.html" class="register-tab">Вхід</a>
+            <a href="./contacts.html" class="register-tab">Реєстрація</a>
+        </div>
+    </header>
+    
+        <div class="basket-cntr">
+            <img class='basket-img' src="./img/basket.png">
+        </div>
+
+        <a href="./index.html" class="floating-btn"><</a>
+        
+        <section class="shop-page" id="section">
+    <!-- <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">Кошик</h3>
+   	   	<h5 class="Action">Видалити все</h5>
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="images/apple.png">
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">MONSTER ENERGY ZERO SUGAR LEWIS HAMILTON</h1>
+   	   	  	<h3 class="subtitle">500ml</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn">+</div>
+   	   	  	<div class="count">2</div>
+   	   	  	<div class="btn">-</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">149₴</div>
+   	   	  	<div class="remove"><u>Видалити</u></div>
+   	   	  </div>
+   	   </div>
+
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="images/grapes.png">
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">MONSTER ENERGY PACIFIC PUNCH JUICE</h1>
+   	   	  	<h3 class="subtitle">500ml</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn">+</div>
+   	   	  	<div class="count">1</div>
+   	   	  	<div class="btn">-</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">99₴</div>
+   	   	  	<div class="remove"><u>Видалити</u></div>
+   	   	  </div>
+   	   </div>
+   	 <hr> 
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+   	 		<div class="Subtotal">Сума:</div>
+   	 		<div class="items"></div>
+   	 	</div>
+   	 	<div class="total-amount">$6.18</div>
+   	 </div>
+   	 <button class="button">Checkout</button></div>
+   </div> -->
+            <h1 class="page-title">МАГАЗИН</h1>
+            <div class="sort-select-div">
+                <select id="sortSelect" onchange="handleSortChange()" class="sort-select">
+                    <option class="default" value="default">Посортувати за...</option>
+                    <option value="name">За ім'ям</option>
+                 <option value="price-down">За цінами(вниз)</option>
+                 <option value="price-up">За цінами(вгору)</option>
+                </select>
+            </div>
+            <div class="wrapper">
+    
+
+            <div class="shop-page-container">
+                <div class="monster-container">
+                    <!-- <div class="monster-container-3">
+                        <img src="./lewis.png" alt="MONSTER ENERGY" class="shop-monster">
+                        <p class="text-monsters">MONSTER ENERGY ZERO SUGAR LEWIS HAMILTON 500ML</p>
+                        <button class="price-monsters"> Ціна 149₴</button>
+                    </div>
+                    <div class="monster-container-3">
+                        <img src="./nitro.png" alt="MONSTER ENERGY" class="shop-monster">
+                        <p class="text-monsters">MONSTER ENERGY NITRO SUPER DRY 500ML</p>
+                        <button class="price-monsters"> Ціна 99₴</button>
+                    </div>
+                    <div class="monster-container-3">
+                        <img src="./violet-ultra" alt="MONSTER ENERGY" class="shop-monster">
+                        <p class="text-monsters">MONSTER ENERGY ULTRA VIOLET ZERO-SUGAR 500ML</p>
+                        <button class="price-monsters"> Ціна 79₴</button>
+                    </div> -->
+                </div>
+                <div class="monster-container2">
+                    <!-- <div class="monster-container-3">
+                        <img src="./monster-classic.webp" alt="MONSTER ENERGY" class="shop-monster">
+                        <p class="text-monsters">MONSTER ENERGY CLASSIC ORIGINAL 500ML</p>
+                        <button class="price-monsters"> Ціна 59₴</button>
+                    </div>
+                    <div class="monster-container-3">
+                        <img src="./punch-pacific" alt="MONSTER ENERGY" class="shop-monster">
+                        <p class="text-monsters">MONSTER ENERGY PACIFIC PUNCH JUICE 500ML</p>
+                        <button class="price-monsters"> Ціна 99₴</button>
+                    </div>
+                    <div class="monster-container-3">
+                        <img src="./pipeline-punch.png" alt="MONSTER ENERGY" class="shop-monster">
+                        <p class="text-monsters">MONSTER ENERGY PIPELINE PUNCH JUICE 500ML</p>
+                        <button class="price-monsters"> Ціна 89₴</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="load-buttons">
+            <button onclick="loadMore()">Ще..</button>
+        </div>
+
+        <button class="scrollToTopBtn" id="scroll-to-top-btn">
+            ︽
+        </button>
+
+        <!-- <div id="myModal" class="modal">
+            <span class="close_adv_btn" id="closeAdvBtn">&times;</span>
+            <div id="imageContainer"></div>
+            <p id="advertismentTimer"></p>
+        </div> -->
+
+    </section>
+
+
+    <footer>
+        <p>© 2023 Monster Shop.</p>
+        <p>Електронна пошта: <a href="mailto:retromusicshop@gmail.com">monstershop@gmail.com</a></p>
+        <p>Номер телефону: <a href="tel:+380976689074">+380993234820</a></p>
+        <p>Адреса: <a href="https://maps.app.goo.gl/MatuB7V1T2muZNeFA" target="_blank"> м. Чернівці, вул. Небесної Сотні 4a</a></p>
+    </footer>
+    <script src="./ad.js"></script>
+    <script src="./main.js"></script>
+    <script src="./shop.js"></script>
+</body>
+</html>

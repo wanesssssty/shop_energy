@@ -1,0 +1,1151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bookman Old Style:wght@300;400;500;600;700&display=swap');
+@import url("font-awesome.min.css");
+html, body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Bookman Old Style', sans-serif;
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+header {
+    background: var(--white, #48da50);
+    color: #fff;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: row;
+    /* text-align: justify; */
+    padding-top: 20px;
+    padding-bottom: 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.logotype-shop {
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 10%;
+    height: 100px;
+}
+
+.main-page-text-container2-test {
+    justify-content: center;
+    text-align: center;
+    margin-top: -38px;
+    margin: 0 auto;
+    align-items: center;
+    /* padding: 10px 0; */
+    /* background: #8DFF92; */
+    box-shadow: 5px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 80%;
+    height: 76px;
+    /* margin: auto;     */
+    /* justify-content: right; */
+    /* display: flex; */
+    padding-top: 42px;
+}
+
+.register {
+    justify-content: center;
+    text-align: center;
+    /* margin-bottom: -38px; */
+    /* margin: 0 auto; */
+    align-items: center;
+    /* padding: 10px 0; */
+    /* background: #8DFF92; */
+    box-shadow: 5px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 10%;
+    height: 76px;
+    /* margin: auto;     */
+    /* justify-content: right; */
+    /* display: flex; */
+    /* padding-top: 42px; */
+    word-wrap: initial;
+}
+
+.register-tab {
+    font-size: 28px;
+    font-family: "Bookman Old Style";
+    font-weight: 400;
+    color: rgba(8, 8, 8, 1);
+    width: 124px;
+    height: 32px;
+    padding-right: 15px;
+    text-decoration: none;
+    transition: ease 0.3s;
+
+}
+
+.register-tab:hover {
+    color: rgb(255, 255, 255);
+    /* position: absolute; */
+    font-size: 32px;
+    top: 50%;
+    /* background-color: #00d100; */
+    color: #fff;
+    border: none;
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 0px 2px 2px #105d0c; */
+    /* padding: 15px; */
+}
+
+.floating-btn {
+    width: 100px;
+    height: 100px;
+    background: #1bd039;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: background 0.25s;
+}
+
+.floating-btn:hover {
+    background: #139429;
+}
+
+.scrollToTopBtn {
+
+    width: 100px;
+    height: 100px;
+    background: #1bd039;
+    display: none;
+    font-family: "Bookman Old Style", sans-serif;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: none;
+    color: #ffffff;
+    font-size: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 50px;
+    bottom: 180px;
+    /* position: fixed; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* font-size: 40px; */
+    /* background-color: #7bdd83; */
+    /* color: #028d00; */
+    /* border: 6px solid #0c981a; */
+    /* border-radius: 70px; */
+    /* width: 70px; */
+    /* height: 70px; */
+    cursor: pointer;
+    /* text-decoration: none; */
+    transition: background-color 0.3s ease;
+}
+
+.scrollToTopBtn:hover {
+    background: #139429;
+}
+
+.monster-img {
+    width: 170%;
+    height: 180%;
+    padding-top: 10px;
+    /* padding-left: -100px; */
+}
+
+.monster {
+    padding-left: 16px;
+}
+ 
+.wrapper {
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.main-page {
+    align-items: center;
+        margin-top: 220px;
+}
+.window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+
+
+.main-page-title {
+    font-size: 40px;
+    font-family: "Bookman Old Style";
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    width: 1440px; /* 1440*/
+    height: 112px;
+    /* padding-top: 38px;
+    padding-bottom: 38px;
+    margin-top: 38px;  */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.main-page-text-container {
+    justify-content: center;
+    border-radius: 40px;
+    height: 768px;
+    width: 1340px;
+    background: var(--white, #63EA69);
+    margin-top: 10px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 60px;
+    padding-bottom: 80px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.main-page-text-container2 {
+    text-align: center;
+    background: #8DFF92;
+    box-shadow: 5px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 1340px;
+    height: 76px;
+    margin: auto;
+    justify-content: left;
+    /* display: flex; */
+    padding-top: 42px;
+}
+
+
+.page-title {
+    font-size: 40px;
+    font-family: "Bookman Old Style";
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    width: 1437px;
+    height: 112px;
+    /* padding-top: 38px;
+    padding-bottom: 38px;
+    margin-top: 38px;  */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+.page-text-container {
+    /* justify-content: center;  */
+    border-radius: 40px;
+    height: 868px;
+    width: 1340px;
+    background: var(--white, #63EA69);
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.page-text-about {
+    height: 868px;
+    width: 1340px;
+}
+
+.about-1 {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about-2 {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about-3 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about-3 p {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    font-family: "Bookman Old Style";
+    /* font-weight: 700; */
+    font-size: 24px;
+}
+
+.tabs {
+    font-size: 28px;
+    font-family: "Bookman Old Style";
+    font-weight: 400;
+    color: rgba(8, 8, 8, 1);
+    width: 124px;
+    height: 32px;
+    padding-right: 15px;
+    text-decoration: none;
+    transition: ease 0.3s;
+    
+}
+
+.tabs:hover{
+    color: rgb(255, 255, 255);
+    /* position: absolute; */
+    top:50%;
+    background-color:#00d100;
+    color: #fff;
+    border:none;
+    border-radius:20px;
+    /* box-shadow: 0px 0px 2px 2px #105d0c; */
+    padding:15px;   
+}
+
+
+.main-page-title2 {
+    font-size: 56px;
+    font-family: "Bookman Old Style";
+    font-weight: 600;
+    color: rgba(237, 255, 238, 1);
+    width: 726px;
+    height: 218px;
+    /* margin-right: 569px; */
+    padding-left: 105px;
+    /* padding-top: 2px;  */
+}
+
+
+.main-page-text {
+    font-size: 26px;
+    font-family: "Bookman Old Style";
+    font-weight: 300;
+    color: rgba(237, 255, 238, 1);
+    width: 726px;
+    height: 158px;
+    padding-left: 105px;
+    padding-bottom: 40px;
+}
+
+.button {
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    width: 200px;
+    height: 60px;
+    /* padding-top: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px; */
+    background: var(--orange, #00d100);
+    color: var(--white, #FFF);
+    /* main */
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    cursor: pointer;
+    margin-left: 105px;
+    margin-bottom: 105px;
+}
+
+.button:hover {
+    background: #01a101;
+    transition: ease 0.5s;
+}
+
+.shop-page {
+    background-image: url(./img/monster-energy-logo-transparent-free-png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Bookman Old Style", sans-serif;
+    /* padding: 20px; */
+    /* або інші стилі для контейнера */
+    margin: 20px;
+    border-radius: 10px;
+    margin-top: 220px;
+}
+
+.contacts-page {
+    margin-top: 220px;
+}
+
+.about-us-page {
+    margin-top: 220px;
+}
+
+.news-page {
+    margin-top: 220px;
+}
+
+.page-text-container {
+    justify-content: center;
+    border-radius: 40px;
+    height: 868px;
+    width: 1340px;
+    background: var(--white, #63EA69);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 48px;
+    padding-right: 48px;
+    color: #fff;
+    /* Білий колір тексту */
+}
+
+.page-text-container h2 {
+    font-size: 40px;
+    font-family: "Bookman Old Style";
+    font-size: 45px;
+    /* font-weight: 700; */
+    color: rgba(255, 255, 255, 1);
+    /* Білий колір тексту */
+    margin-bottom: 20px;
+    /* Додано відступ між заголовками */
+}
+
+.page-text-container h3 {
+    font-size: 56px;
+    font-family: "Bookman Old Style";
+    font-size: 35px;
+    /* font-weight: 600; */
+    color: rgba(237, 255, 238, 1);
+    /* Білий колір тексту */
+    margin-bottom: 15px;
+    /* Додано відступ між заголовками та абзацами */
+}
+
+.page-text-container p {
+    font-size: 16px;
+    font-family: "Bookman Old Style";
+    font-size: 25px;
+    /* font-weight: 400; */
+    color: rgba(255, 255, 255, 1);
+    /* Білий колір тексту */
+    /* line-height: 24px; */
+    /* margin-bottom: 20px; */
+    /* Додано відступ між абзацами */
+}
+
+.shop-monster {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    /* Adjust size as needed */
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.text-monsters {
+    color: black;
+    font-size: 20px;
+    font-family: 'Bookman Old Style',sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.basket-cntr {
+    z-index: 1;
+    position: fixed;
+    padding-top: 140px;
+    place-self: end;
+    
+    width: 20%;
+    /* height: 10%; */
+
+}
+
+.basket-img {
+    width: 30%;
+    float: inline-end;
+
+    /* height: 60%; */
+}
+
+.sort-select-div {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 20px;
+}
+
+.sort-select {
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    /* word-wrap: break-word; */
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background: rgba(84, 200, 111, 0.7);
+    /* opacity: 0.33; */
+    color: #000000;
+}
+
+option {
+    font-family: 'Bookman Old Style', sans-serif;
+    /* text-decoration: dashed; */
+    /* margin: 10px; */
+    background: rgba(84, 200, 111, 0.7);
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+}
+
+.CartContainer {
+	width: 50%;
+	height: 20%;
+	background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #1687d933;
+}
+
+.Header {
+	margin: auto;
+	width: 90%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Heading {
+	font-size: 30px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 700;
+	color: #2F3841;
+}
+
+.Action {
+	font-size: 20px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+	border-bottom: 1px solid #E44C4C;
+}
+
+.Cart-Items {
+	margin: auto;
+	width: 90%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.image-box {
+	width: 15%;
+	text-align: center;
+}
+.about {
+	height: 100%;
+	width: 24%;
+}
+.title {
+	padding-top: 10px;
+	line-height: 20px;
+	font-size: 20px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 500;
+	color: #202020;
+}
+.subtitle {
+	line-height: 10px;
+	font-size: 18px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 600;
+	color: #909090;
+}
+
+.counter {
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 900;
+	color: #202020;
+	cursor: pointer;
+}
+
+.count {
+	font-size: 20px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 600;
+	color: #202020;
+}
+
+.prices {
+	height: 100%;
+	text-align: right;
+}
+.amount {
+	padding-top: 20px;
+	font-size: 26px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 800;
+	color: #202020;
+}
+.save {
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 600;
+	color: #1687d9;
+	cursor: pointer;
+}
+.remove {
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+}
+
+.pad {
+	margin-top: 5px;
+}
+
+hr {
+	width: 66%;
+	float: right;
+	margin-right: 5%;
+}
+.checkout {
+	float: right;
+	margin-right: 5%;
+	width: 28%;
+}
+.total {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.Subtotal {
+	font-size: 22px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 700;
+	color: #202020;
+}
+.items {
+	font-size: 16px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+
+.total-amount{
+	font-size: 36px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 900;
+	color: #202020;
+}
+
+.price-monsters {
+    color: white;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 550;
+    /* word-wrap: break-word; */
+    transition: ease 0.3s;
+}
+.shop-page-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.monster-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.monster-container2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.monster-container-3 {
+    background: rgba(127.38, 219.94, 147.74, 0.80);
+    /* Прозорий фон (білий колір з 70% прозорістю) */
+    padding: 30px;
+    /* Опціонально: додайте відступи для зручності */
+    border-radius:70px;
+    /* Опціонально: додайте круглі кути для стилізації */
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 800px;
+}
+
+.form-container {
+    border-radius: 40px;
+    background: var(--white, #FFF);
+    padding-top: 32px;
+    padding-bottom: 631px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 556px;
+    height: 960px;
+    /* margin-bottom: 30px; */
+    flex-shrink: 0;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
+}
+
+.form-container-2 {
+    border-radius: 40px;
+    background: var(--white, #FFF);
+    padding-top: 32px;
+    padding-bottom: 570px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 556px;
+    height: 100px;
+    /* margin-bottom: 30px; */
+    flex-shrink: 0;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
+}
+
+.form-title {
+    color: var(--black, #1B1D1F);
+    /* header */
+    font-family: 'Bookman Old Style',sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 24px;
+    /* 100% */
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.form-descr {
+    color: var(--black, #1B1D1F);
+    text-align: center;
+    /* main */
+    font-family: 'Bookman Old Style',sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /*  150% */
+    margin-bottom: 24px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.form-wrong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.form-field-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.form-field-label {
+    color: var(--black, #1B1D1F);
+    /* main */
+    font-family: 'Bookman Old Style',sans-serif;
+    font-size: 22px;
+    font-weight: 450;
+    line-height: 24px;
+    /* 150% */
+    margin-bottom: 8px;
+}
+
+.forgot-pass {
+    color: var(--black, #1B1D1F);
+        /* main */
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-left: 146px;
+    /* align-items: center; */
+    /* text-align: center; */
+        /* 150% */
+        /* margin-bottom: 8px; */
+}
+
+:root {
+  --valid: hsl(140 80% 40%);
+  --invalid: hsl(10 80% 40%);
+  --input: hsl(0 0% 0%);
+}
+
+.form-field-input {
+    --is-valid: 0;
+  --is-invalid: 0;
+  background: linear-gradient(var(--input), var(--input)) padding-box,
+    linear-gradient(var(--invalid), var(--invalid))
+      calc((1 - var(--is-invalid)) * -100cqi) 0 / 100% 100% border-box,
+    linear-gradient(var(--valid), var(--valid))
+      calc((1 - var(--is-valid)) * 100cqi) 0 / 100% 100% border-box,
+    var(--input);
+  border: 2px solid transparent;
+  font-size: 1rem;
+  background-repeat: no-repeat;
+    width: 428px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--blue, #00bb48);
+    background: var(--white, #FFF);
+    padding-left: 8px;
+    padding-right: 8px;
+    color: var(--black, #1B1D1F);
+    /* main */
+    font-family: 'Bookman Old Style',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /*  150% */
+}
+
+input:invalid:not(:placeholder-shown):not(:focus-visible) {
+  --is-invalid: 1;
+}
+
+input:valid {
+  --is-valid: 1;
+}
+
+.form-button {
+    border: none;
+    outline: none;
+    border-radius: 18px;
+
+    /* padding-top: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px; */
+    background: var(--orange, #00d100);
+    color: var(--white, #FFF);
+    /* main */
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 24px;
+    /* 150% */
+    cursor: pointer;
+    margin-top: 20px;
+    width: 270px;
+    height: 60px;
+}
+
+.form-button:hover {
+    background: #01a101;
+    transition: ease 0.3s;
+    width: 255px;
+    height: 65px;
+}
+
+.monster-container p {
+    color: black;
+    margin-top: 10px;
+    font-size: 26px;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.monster-container button {
+    background-color: #000000;
+    /* Dark Green */
+    color: #ffffff;
+    /* White */
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.monster-container button:hover {
+    background-color: #41ae47;
+    color: #000000;
+    /* Darker Green on Hover */
+}
+
+.monster-container2 p {
+    color: black;
+    margin-top: 10px;
+    font-size: 26px;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.monster-container2 button {
+    background-color: #000000;
+    /* Dark Green */
+    color: #ffffff;
+    /* White */
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.monster-container2 button:hover {
+    background-color: #41ae47;
+    color: #000000;
+    /* Darker Green on Hover */
+}
+
+.load-buttons {
+    margin-left: 47.5%;
+    margin-top: 20px;
+    /* background-color: #000000; */
+}
+
+.load-buttons button {
+    background-color: #000000;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 28px;
+    /* Dark Green */
+    color: #ffffff;
+    /* White */
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.load-buttons button:hover {
+    background-color: #41ae47;
+    color: #000000;
+    /* Darker Green on Hover */
+    transition: ease 0.3s;
+}
+.modal {
+      display: none;
+      /* flex-direction: row; */
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 3;
+      /* Sit on top */
+      padding-top: 30px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 120%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      font-family: 'Bookman Old Style', sans-serif;
+      font-size: 24px;
+      text-align: center;
+      /* border-radius: 40px; */
+      background-color: #54d346;
+  }
+
+  /* Modal Content */
+  .modal-content {
+      margin: auto; 
+      padding: 20px;
+      /* border: 1px solid #888; */
+      width: 70%;
+      height: 62%;
+  }
+
+.img-adv {
+    width: 20%;
+    height: 30%;
+    /* margin-left: 100px; */
+    /* margin-right: 10px; */
+}
+
+  /* The Close Button */
+  .close {
+      color: #00630a;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: #6f6f6f;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .close_adv_btn {
+      color: #009216;
+      /* margin-right: 50px; */
+      /* z-index: 3; */
+      /* float: right; */
+      float: inline-end;
+      /* align-items: center; */
+      font-size: 70px;
+      font-weight: bold;
+      display: none;
+  }
+
+  .close_adv_btn:hover,
+  .close_adv_btn:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .description {
+      display: none;
+  }
+
+.non-modal-window {
+    font-size: 30px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    border-radius: 30px;
+    width: 400px;
+    height: 330px;
+}
+
+.close-btn {
+    border-radius: 15px;
+    background-color: red;
+    height: 2rem;
+    /* padding: 5px; */
+    color: white;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.agree-btn {
+    border-radius: 15px;
+    background-color: green;
+    height: 2rem;
+    color: white;
+    /* padding: 5px; */
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+footer {
+    bottom: 0;
+    background-color: #000000;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 500;
+    margin-top: 100px;
+    /* width: 100% ; */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 50%;
+}
+
+.footer-right {
+    width: 50%;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
