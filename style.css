@@ -471,19 +471,272 @@ header {
 .basket-cntr {
     z-index: 1;
     position: fixed;
-    padding-top: 140px;
+    padding-top: 180px;
     place-self: end;
-    
-    width: 20%;
+    width: 50%;
     /* height: 10%; */
-
+    
 }
 
-.basket-img {
-    width: 30%;
+
+.cart-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.cart-content {
+    background-color: #89ff7e;
+    margin: 9% auto; /* 15% from the top and centered */
+    padding: 30px;
+    /* border: 1px solid #008a00; */
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+}
+
+.close-cart-modal {
+    color: #006f07;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-cart-modal:hover,
+.close-cart-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    /* border-bottom: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.cart-total {
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item button {
+    width: 120px;
+    /* margin: 5px; */
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    /* word-wrap: break-word; */
+    text-align: center;
+    border-radius: 20px;
+	cursor: pointer;
+
+    border: none;
+    background: rgba(84, 200, 111, 0.7);
+    /* opacity: 0.33; */
+    color: #000000;
+    height: 35px;
+}
+
+.cart-item button:hover {
+    background: #006e00cd;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.cart-item p {
+    width: 800px;
+}
+
+.quantity-container button {
+    width: 30px;
+    margin: 5px;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    /* word-wrap: break-word; */
+    text-align: center;
+    border-radius: 20px;
+	cursor: pointer;
+
+    border: none;
+    background: rgba(84, 200, 111, 0.7);
+    /* opacity: 0.33; */
+    color: #000000;
+    height: 30px;
+}
+
+.quantity-container button:hover {
+    background: #006e00cd;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.quantity-container input {
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: none;
+    /* border: 1px solid var(--blue, #00bb48); */
+    background: var(--white, #dbffe2);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--black, #1B1D1F);
+    /* main */
+    font-family: 'Bookman Old Style',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
     float: inline-end;
+    line-height: 24px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+}
+
+.cart-total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* border-top: 1px solid #ddd; */
+  margin-top: 10px;
+}
+
+.purchase-button {
+    width: 200px;
+    margin: 5px;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    /* word-wrap: break-word; */
+    text-align: center;
+    border-radius: 20px;
+	cursor: pointer;
+
+    border: none;
+    background: rgba(84, 200, 111, 0.7);
+    /* opacity: 0.33; */
+    color: #000000;
+    height: 50px;
+    padding: 10px 20px;
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+    /* border-radius: 5px; */
+}
+
+.purchase-button:hover {
+    background: #006e00cd;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.chart-controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  height: 50px;
+  /* width: 1000px; */
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+
+  height: 500px; /* Забезпечити достатню висоту для графіків */
+  font-family: 'Bookman Old Style', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+ }
+
+canvas {
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: 200px;
+}
+
+
+
+
+.basket-img {
+    height: 40px;
+    width: 25%;
+    float: inline-end;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    /* word-wrap: break-word; */
+    text-align: center;
+    border-radius: 20px;
+	cursor: pointer;
+
+    border: none;
+    background: rgba(84, 200, 111, 0.7);
+    /* opacity: 0.33; */
+    color: #000000;
+
 
     /* height: 60%; */
+}
+
+.basket-img:hover {
+    background: #006e00cd;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.clear-cart {
+    height: 40px;
+    width: 35%;
+    margin-left: 10px;
+    float: inline-end;
+
+    font-family: 'Bookman Old Style', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    /* word-wrap: break-word; */
+    text-align: center;
+    border-radius: 20px;
+	cursor: pointer;
+
+    border: none;
+    background: rgba(84, 200, 111, 0.7);
+    /* opacity: 0.33; */
+    color: #000000;
+}
+
+.clear-cart:hover {
+    background: #006e00cd;
+    color: #ffffff;
+    transition: ease 0.5s;
 }
 
 .sort-select-div {
@@ -502,6 +755,7 @@ header {
     /* word-wrap: break-word; */
     width: 20%;
     height: 100%;
+	cursor: pointer;
     text-align: center;
     border-radius: 20px;
     border: none;
@@ -520,7 +774,7 @@ option {
     border-radius: 20px;
     border: none;
 }
-
+/* 
 .CartContainer {
 	width: 50%;
 	height: 20%;
@@ -680,7 +934,7 @@ hr {
 	font-family: 'Bookman Old Style', sans-serif;
 	font-weight: 900;
 	color: #202020;
-}
+} */
 
 .price-monsters {
     color: white;
@@ -1097,9 +1351,11 @@ input:valid {
     margin-bottom: 10px;
     margin-right: 40px;
     padding: 10px;
+	cursor: pointer;
 }
 
 .agree-btn {
+	cursor: pointer;
     border-radius: 15px;
     background-color: green;
     height: 2rem;
